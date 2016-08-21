@@ -250,7 +250,7 @@ static inline bool buffer_migrate_lock_buffers(struct buffer_head *head,
 }
 #endif 
 
-static int migrate_page_move_mapping(struct address_space *mapping,
+int migrate_page_move_mapping(struct address_space *mapping,
 		struct page *newpage, struct page *page,
 		struct buffer_head *head, enum migrate_mode mode)
 {
