@@ -650,7 +650,6 @@ static unsigned long shrink_page_list(struct list_head *page_list,
 			    PageReclaim(page) &&
 			    zone_is_reclaim_writeback(zone)) {
 				nr_immediate++;
-			 * Check __GFP_IO, certainly because a loop driver
 			
 			} else if (global_reclaim(sc) ||
 			    !PageReclaim(page) || !may_enter_fs) {
