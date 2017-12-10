@@ -71,7 +71,7 @@ static struct devfreq *find_device_devfreq(struct device *dev)
 /**
  * devfreq_set_freq_limits() - Set min and max frequency from freq_table
  * @devfreq:	the devfreq instance
- */
+ 
 static void devfreq_set_freq_limits(struct devfreq *devfreq)
 {
 	int idx;
@@ -90,6 +90,7 @@ static void devfreq_set_freq_limits(struct devfreq *devfreq)
 	devfreq->min_freq = min;
 	devfreq->max_freq = max;
 }
+*/
 
 /**
  * devfreq_get_freq_level() - Lookup freq_table for the frequency
